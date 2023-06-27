@@ -15,12 +15,36 @@
     color: #1abc9c !important;
 }
 
+body > .container {
+    margin-top: 6% !important;
+}
+
+.compose-button {
+    height: 40px;
+    background:#fff!important ;
+    position: fixed;
+    margin-left: 46%;
+	text-align: center;
+	width: 8%;
+	bottom: 65px;
+    border-radius: 6%;
+}
+
+.compose-button:hover {
+    border-color: #1abc9c;
+    color: #1abc9c !important;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 .footer-padding {
 	padding-bottom: 60px;
 }
 
 .footer {
-	position: absolute;
+	position: fixed;
 	text-align: center;
 	bottom: 0;
 	width: 100%;
