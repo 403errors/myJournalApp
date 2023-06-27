@@ -1,0 +1,17 @@
+<%- include('partials/header');  -%>
+<h1>Home</h1>
+<p>
+    <%= startingContent %>   
+</p>
+
+<% for ( postNum = 0; postNum < newPosts.length; postNum++) { %>
+    <%  var currentPost = newPosts[postNum]["title"]; %>
+    <%  var currentContent = newPosts[postNum]["content"]; %>
+    <div>
+        <h1> <%= currentPost %> </h1>
+        <p> <%= currentContent.substring(0, 100) + "..." %> <a href="/posts/<%= currentPost %>">Read More</a> </p>
+    </div>
+<%  } %>
+
+    
+<%- include('partials/footer');  -%>
